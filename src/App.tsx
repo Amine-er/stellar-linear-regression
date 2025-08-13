@@ -1,5 +1,7 @@
-const App = () => {
-  return <div>Stellar linear regression</div>;
-};
+import StellarRegression from './components/stellar/StellarRegression';
+
+function App() {
+  return <StellarRegression />;
+}
 
 export default App;
