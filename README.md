@@ -28,9 +28,32 @@ Cette application démontre l'implémentation complète d'un algorithme de régr
 - **Recharts** - Visualisations interactives
 - **Lucide React** - Icônes modernes
 
+## Structure du Code
+
+```
+src/
+├── components/
+│   ├── stellar/
+│   │   ├── StellarRegression.tsx    
+│   │   ├── Header.tsx               
+│   │   ├── VisualizationTab.tsx     
+│   │   ├── MetricsTab.tsx           
+│   │   ├── DataTab.tsx              
+│   │   └── Footer.tsx               
+│   └── ui/                           
+├── data/
+│   └── stellarData.ts               
+├── types/
+│   └── stellar.ts                   
+├── utils/
+│   └── regression.ts                
+└── lib/
+    └── utils.ts                     
+```
+
 ## Prérequis
 
-- Node.js (version 16 ou supérieure)
+- Node.js (version 18 ou supérieure)
 - npm ou yarn
 - Navigateur moderne supportant ES6+
 
@@ -58,7 +81,7 @@ yarn dev
 
 4. **Ouvrir dans le navigateur**
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ## 📊 Dataset
@@ -91,7 +114,7 @@ L'application utilise les données de 20 étoiles remarquables incluant :
 
 *Dataset complet visible dans l'onglet "Données" de l'application*
 
-## 🧮 Algorithme de Régression
+## Algorithme de Régression
 
 L'implémentation utilise la méthode des moindres carrés :
 
@@ -126,25 +149,18 @@ L'analyse révèle une **forte corrélation** (R² ≈ 0.85) entre la distance l
 - **Corrélation :** ~0.92 (très forte)
 - **Erreur standard :** ~1.2 magnitude
 
-## Architecture du Code
+## UI Preview
 
-```
-src/
-├── components/
-│   ├── stellar/
-│   │   ├── StellarRegression.tsx    
-│   │   ├── Header.tsx               
-│   │   ├── VisualizationTab.tsx     
-│   │   ├── MetricsTab.tsx           
-│   │   ├── DataTab.tsx              
-│   │   └── Footer.tsx               
-│   └── ui/                           
-├── data/
-│   └── stellarData.ts               
-├── types/
-│   └── stellar.ts                   
-├── utils/
-│   └── regression.ts                
-└── lib/
-    └── utils.ts                     
-```
+> Les captures d’écran ci-dessous présentent les vues principales de l’interface de l’application.
+
+- Visualisation interactive avec ligne de régression
+<img width="1883" height="911" alt="image" src="https://github.com/user-attachments/assets/8acfecf5-c7ff-4f3e-aa58-60355ebca8e9" />
+
+- Métriques statistiques
+<img width="1872" height="917" alt="image" src="https://github.com/user-attachments/assets/03aba9c4-b9a6-4e7a-a71c-1551e5b683ef" />
+
+- Dataset astronomique réel
+<img width="1877" height="957" alt="image" src="https://github.com/user-attachments/assets/8bc66089-aa89-4f14-81d8-1c17e25424b5" />
+
+
+
